@@ -1,8 +1,8 @@
-import random as rand
+import random 
 
 
 def roll_dice():
-    return rand.randint(1, 6)
+    return random.randint(1, 6)
 
 
 def player_turn(player, current_score):
