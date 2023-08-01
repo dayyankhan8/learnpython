@@ -69,8 +69,8 @@ def display_hangman(tries):
 
 def hangman():
     print("Welcome to Hangman!")
-    player1 = input("Player 1, Please Enter your name: ").title()
-    player2 = input("player 2, Please enter your name: ").title()
+    player1 = input("Player 1, Please Enter your name: ").title().strip()
+    player2 = input("player 2, Please enter your name: ").title().strip()
     print(f"\n----------------------|  How to Play?  |----------------------\n{player1} will enter a word and {player2} will have to guess it in 6 attempts.\nGuessed letters will be shown after every attempt.\nIf {player2} guesses the word in 6 attempts, {player1} loses.\nIf {player2} is not able to guess the word in 6 attempts {player1} wins.\n------X-----X-----X-----X-----X-----X-----X-----X-----X-------\n")
     word = getpass.getpass(f"{player1}, Please enter a word: ").lower()
     guessed_letters = set()
