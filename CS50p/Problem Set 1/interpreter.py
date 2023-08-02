@@ -9,7 +9,7 @@ def calculate_expression(x, operator, z):
         return x / z
 
 def main():
-    expression = input("Please enter an arithmetic expression (e.g., x + y): ")
+    expression = input("Expression: ")
     x, operator, z = expression.split()
 
     x = int(x)
