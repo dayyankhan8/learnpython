@@ -21,7 +21,7 @@ def game1():
 
 def game2():
 
-        def roll_dice():
+    def roll_dice():
         return random.randint(1, 6)
 
 
@@ -66,7 +66,7 @@ def game2():
 
 def game3():
 
-        def print_intro():
+    def print_intro():
         print("Welcome to the Dungeon Explorer!")
         print("You find yourself in a dark and creepy dungeon.")
         print("Your goal is to find the treasure and get out alive.")
@@ -140,8 +140,7 @@ def game3():
 
 def game4():
      
-        def get_riddle(level):
-        # You can define your riddles for each level here.
+    def get_riddle(level):
         riddles = {
             1: "What is black when you purchase it, red while you are using it, and gray when you discard it?",
             2: "I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I?",
@@ -165,13 +164,11 @@ def game4():
             20: "What is always in front of you but can't be seen?",
 
 
-            # Add more riddles for levels 3 to 20...
         }
 
         return riddles.get(level, None)
 
     def get_answer(level):
-        # You can define the correct answers for each level here.
         answers = {
             1: "coal",
             2: "echo",
@@ -193,8 +190,6 @@ def game4():
             18: "keyboard",
             19: "glove",
             20: "future",
-
-            # Add more answers for levels 3 to 20...
         }
 
         return answers.get(level, None)
@@ -357,27 +352,27 @@ def game5():
 def main():
     print("\nWelcome!")
     print("""
-          --| Game Selection Menu |--
+    --------| Game Selection Menu |--------\n
           1. Guessing the Number Game
           2. Dice Rolling Game
           3. Treasure Hunt Game
           4. Riddles Game
           5. Hangman Game
-          ----------------------------
+    ----------------------------------------
           """
           )
-    choice = input("Enter the Number of Game you want to play from  the selection menu above: ")
+    choice = input("Enter the Number of the Game you want to play, from the selection menu above: ")
 
-    if choice == 1:
+    if choice == '1':
         game1()
-    elif choice == 2:
+    elif choice == '2':
         game2()
-    elif choice == 3:
+    elif choice == '3':
         game3()
-    elif choice == 4:
-        game4()     
-    elif choice == 5:
-        game5()       
+    elif choice == '4':
+        game4()    
+    elif choice == '5':
+        game5()      
     else:
         print("Invalid choice. Exiting the program.")
 
