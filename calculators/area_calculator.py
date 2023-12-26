@@ -1,4 +1,4 @@
-print("Welcome to the Area Calculator.\nPlease select a shape from the menu below:")
+print("Welcome to the Area Calculator.\nPlease select the index number of the shape from the menu below:")
 print("1. Square")
 print("2. Rectangle")
 print("3. Triangle")
